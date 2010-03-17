@@ -29,6 +29,14 @@ i = 0
 
 j = 1
 
+if type(words) != type([]):
+   print "Word not found."
+   sys.exit(1)
+
+if len(words) ==0:
+    print "Meaning not defined."
+    sys.exit(1)
+
 while i < len(words):
     if "headword" in words[i]:
         if "text" in words[i]:
